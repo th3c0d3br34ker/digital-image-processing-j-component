@@ -1,0 +1,22 @@
+a => image
+b => greyscaled_image
+c => binarized_image
+d => filled_binarized_image
+e => area_opened_binarized_image
+uo => greyscaled_preprocessed_image
+mo => median_filtered_greyscaled_preprocessed_image
+po => binarized_median_filtered_greyscaled_preprocessed_image
+BW => mask
+k => masked_binarized_median_filtered_greyscaled_preprocessed_image
+M => area_opened_masked_binarized_median_filtered_greyscaled_preprocessed_image => final_image
+-----------------------------------------
+
+video 1
+Image Preprocessed.
+
+video 2
+Identify the kidney stones.
+
+video 3 
+Region of interest indentified.
+Mask applied to a fixed region.

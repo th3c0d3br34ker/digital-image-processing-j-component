@@ -52,8 +52,3 @@ if(number>=1)
 else
     disp('no stone is detected');
 end
-
-
-
-
-

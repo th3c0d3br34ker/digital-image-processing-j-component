@@ -22,7 +22,13 @@ preprocessed_image=double(image).*repmat(area_opened_binarized_image, [1 1 3]);
 preprocessed_image=uint8(preprocessed_image);
 % figure;
 % imshow(preprocessed_image);
-preprocessed_image=imadjust(preprocessed_image,[0.3, 0.7], [])+50;
+
+% Reduce Brightness to the Image (gaussian)
+preprocessd_image_with_brightness=uint8(preprocessed_image+50);
+figure;
+imshow(preprocessd_image_with_brightness);
+
+preprocessed_image=imadjust(preprocessd_image_with_brightness,[0.3, 0.7], [])+50;
 % figure;
 % imshow(preprocessed_image);
 greyscaled_preprocessed_image=rgb2gray(preprocessed_image);
